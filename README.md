@@ -3,12 +3,12 @@
 한글에 고통받다가 만든 라이브러리
 
 ```typescript
-import { getKoreanHanjaNumeral } from "korean-gotong/hanjaNumberTools";
+import { getKoreanHanjaNumeral } from "korean-gotong/dist/hanjaNumberTools";
 import {
   getTopicParticle,
   getLinkingParticle,
   을를,
-} from "korean-gotong/particleTools";
+} from "korean-gotong/dist/particleTools";
 
 console.log(getTopicParticle("사과")); // '는'
 console.log(을를("참외")); // '참외를'

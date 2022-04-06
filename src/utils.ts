@@ -1,0 +1,1 @@
+export const within = (a: number, b: number, c: number): boolean => a <= b && b <= c;

@@ -89,7 +89,7 @@ export const getKoreanHanjaNumeral = (
   else {
     let power10k = 0;
     integer = Math.abs(integer);
-    while (integer > 1) {
+    while (integer >= 1) {
       ret =
         _getKoreanHanjaNumeral_int_under10K(
           integer,

@@ -1,6 +1,6 @@
 {
   "name": "korean-gotong",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "한글이 인생에 고통을 선사할 때마다 기능이 추가될 예정입니다.",
   "main": "dist/index.js",
   "scripts": {
@@ -12,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/Heartade/korean-gotong.git"
   },
-  "keywords": ["한글", "korean", "한국어", "은는이가", "hangul"],
+  "keywords": [
+    "한글",
+    "korean",
+    "한국어",
+    "은는이가",
+    "hangul"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {

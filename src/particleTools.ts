@@ -54,24 +54,58 @@ export const getLinkingParticle = (str: string): string => {
 /**
  * `getTopicParticle`을 사용해 입력 문자열에 '은'/'는'를 붙여 반환
  * @param str '은'/'는'을 붙일 문자열
- * @example 은는('사과') //'사과는' 반환
+ * @example addTopicParticle('사과') //'사과는' 반환
  */
-export const 은는 = (str: string) => str + getTopicParticle(str);
+export const addTopicParticle = (str: string) => str + getTopicParticle(str);
 /**
  * `getSubjectParticle`을 사용해 입력 문자열에 '이'/'가'를 붙여 반환
  * @param str '이'/'가'를 붙일 문자열
- * @example 이가('사과') //'사과가' 반환
+ * @example addSubjectParticle('사과') //'사과가' 반환
  */
-export const 이가 = (str: string) => str + getSubjectParticle(str);
+export const addObjectParticle = (str: string) => str + getSubjectParticle(str);
 /**
  * `getObjectParticle`을 사용해 입력 문자열에 '을'/'를'를 붙여 반환
  * @param str '을'/'를'을 붙일 문자열
- * @example 을를('사과') //'사과를' 반환
+ * @example addObjectParticle('사과') //'사과를' 반환
  */
-export const 을를 = (str: string) => str + getObjectParticle(str);
+export const addSubjectParticle = (str: string) => str + getObjectParticle(str);
 /**
  * `getLinkingParticle`을 사용해 입력 문자열에 '과'/'와'를 붙여 반환
  * @param str '과'/'와'를 붙일 문자열
+ * @example addLinkingParticle('사과') //'사과와' 반환
+ */
+export const addLinkingParticle = (str: string) =>
+  str + getLinkingParticle(str);
+
+/**
+ * `getTopicParticle`을 사용해 입력 문자열에 '은'/'는'를 붙여 반환
+ * @category alias
+ * @see {@link addTopicParticle}
+ * @param str '은'/'는'을 붙일 문자열
+ * @example 은는('사과') //'사과는' 반환
+ */
+export const 은는 = addTopicParticle;
+/**
+ * `getSubjectParticle`을 사용해 입력 문자열에 '이'/'가'를 붙여 반환
+ * @category alias
+ * @see {@link addSubjectParticle}
+ * @param str '이'/'가'를 붙일 문자열
+ * @example 이가('사과') //'사과가' 반환
+ */
+export const 이가 = addSubjectParticle;
+/**
+ * `getObjectParticle`을 사용해 입력 문자열에 '을'/'를'를 붙여 반환
+ * @category alias
+ * @see {@link addObjectParticle}
+ * @param str '을'/'를'을 붙일 문자열
+ * @example 을를('사과') //'사과를' 반환
+ */
+export const 을를 = addObjectParticle;
+/**
+ * `getLinkingParticle`을 사용해 입력 문자열에 '과'/'와'를 붙여 반환
+ * @category alias
+ * @see {@link addLinkingParticle}
+ * @param str '과'/'와'를 붙일 문자열
  * @example 과와('사과') //'사과와' 반환
  */
-export const 과와 = (str: string) => str + getLinkingParticle(str);
+export const 과와 = addLinkingParticle;

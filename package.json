@@ -1,8 +1,12 @@
 {
   "name": "korean-gotong",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "한글이 인생에 고통을 선사할 때마다 기능이 추가될 예정입니다.",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx babel src --out-dir dist --extensions \".ts\"",
@@ -13,13 +17,16 @@
     "url": "git+https://github.com/Heartade/korean-gotong.git"
   },
   "keywords": [
-    "한글",
     "korean",
+    "hangul",
+    "한글",
     "한국어",
     "은는이가",
-    "hangul"
+    "을를",
+    "맞춤법",
+    "숫자"
   ],
-  "author": "",
+  "author": "Daniel Soohan Park",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Heartade/korean-gotong/issues"
@@ -34,7 +41,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "typescript": "^4.6.3"
   },
-  "dependencies": {
-    "babel-cli": "^6.26.0"
+  "exports": {
+    ".": "./dist/"
   }
 }

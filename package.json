@@ -1,6 +1,6 @@
 {
   "name": "korean-gotong",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "description": "한글이 인생에 고통을 선사할 때마다 기능이 추가될 예정입니다.",
   "main": "dist/index.js",
   "files": [
@@ -46,6 +46,10 @@
     "typescript": "^4.6.3"
   },
   "exports": {
-    ".": "./dist/"
+    ".": "./dist",
+    "./hanjaNumberTools": "./dist/hanjaNumberTools",
+    "./particleTools": "./dist/particleTools",
+    "./hangulCodes": "./dist/hangulCodes",
+    "./dist/": "./dist/"
   }
 }
